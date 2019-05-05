@@ -1,0 +1,31 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+
+body {
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  margin-top: 2%;
+  font-family: Helvetica, sans-serif;
+  font-weight: bolder;
+}
+
+
+
+.container {
+  background-color: black;
+}
+
+#image{
+  height: 55%;
+  width: 55%;
+}
+
+#imageborder{
+  border: 2px solid white;
+}
+
+#info{
+  border: 2px solid white;
+}
