@@ -1,6 +1,7 @@
-<div class="container">
+<body>
+  <div class="container">
 
-  <body>
+
 
     <nav class="navbar navbar-expand-lg static-top">
       <div class="container">
@@ -39,27 +40,23 @@
     </div>
     <ul *ngFor='let usersearch of userArray; let i = "index"'>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6" id= "imageborder">
           <br>
-          <img src="{{usersearch.avatar_url}}" alt="">
+          <img id="image" src="{{usersearch.avatar_url}}" alt="">
         </div>
-        <div class="col-md-6">
-          {{usersearch.login}}<br>
+        <div class="col-md-6" id= "info">
+          UserName: {{usersearch.login}}<br>
           <br>
 
           {{usersearch.bio}}<br>
           <br>
 
-          {{usersearch.repos_url}}<br>
+          Repository: {{usersearch.repos_url}}<br>
           <br>
         </div>
 
 
       </div>
     </ul>
-
-  </body>
-
-
-
-  _
+  </div>
+</body>
