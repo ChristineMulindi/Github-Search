@@ -1,7 +1,7 @@
 <div class="container">
 
   <body>
-    
+
     <nav class="navbar navbar-expand-lg static-top">
       <div class="container">
         <a class="navbar-brand" href="#">
@@ -32,24 +32,34 @@
     </nav>
 
     <div class="row">
-
-      <input type="content" type="text" #usersearch>
-      <button class="btn btn-primary" (click)="getUser(usersearch)">SEARCH</button>
-      <ul *ngFor='let usersearch of userArray; let i = "index"'>
-
-        {{usersearch.login}}<br>
-        <br>
-        {{usersearch.bio}}<br>
-        <br>
-         {{usersearch.repos_url}}<br>
-         <br>
-        <a href='{{usersearch.repos_url}}'> </a>
-        <br>
-        <img src="{{usersearch.avatar_url}}" alt="">
-      </ul>
+      <div class="col-md-12">
+        <input type="content" type="text" #usersearch>
+        <button class="btn btn-primary" (click)="getUser(usersearch)">SEARCH</button>
+      </div>
     </div>
+    <ul *ngFor='let usersearch of userArray; let i = "index"'>
+      <div class="row">
+        <div class="col-md-6">
+          <br>
+          <img src="{{usersearch.avatar_url}}" alt="">
+        </div>
+        <div class="col-md-6">
+          {{usersearch.login}}<br>
+          <br>
+
+          {{usersearch.bio}}<br>
+          <br>
+
+          {{usersearch.repos_url}}<br>
+          <br>
+        </div>
+
+
+      </div>
+    </ul>
+
   </body>
 
 
-  
+
   _
