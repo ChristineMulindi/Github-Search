@@ -1,6 +1,16 @@
 # GithubSearch
 
+## Description
+
+This is a website where users may enter a GitHub username into a form, submit it, and see names and descriptions of that person's public repositories. A person can also look for repositories
+
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
+
+## Before Running this Project
+Install npm packages using 'npm install' command.
+
 
 ## Development server
 
@@ -10,9 +20,30 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
+##Usage
+* Git clone this repository from [https://github.com/christinemulindi/SearchGithub.git]
+* Make sure you have node and npm installed
+*  Run npm link in your terminal, this will download and save all required modules.
+* Run ng serve for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
+
+
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
+## Specifications
+
+| Behavior        | Input                | Output        |
+| --------------- |:-------------------: | -------------:|
+| Search bar      | Type the username    | Users profile |
+
+
+## Technologies used
+
+* Typescript
+* Angular
+* Html
+* CSS
 
 ## Running unit tests
 
@@ -22,6 +53,16 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
+
+## Bugs and issues
+
+If you encounter any problem or issue with the website feel free to contact me at (mulindichristine@gmail.com)
+
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## License
+
+This software is Licenced under MIT Licence
+Copyright 2018( ChristineMulindi)
