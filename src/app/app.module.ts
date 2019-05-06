@@ -6,17 +6,28 @@ import { AppComponent } from './app.component';
 import { MyGithubComponent } from './my-github/my-github.component';
 import { UserServiceService } from '../app/user-service.service';
 import {RepositoryService} from '../app/repository.service';
+import { SearchComponent } from './search/search.component';
+import { RouterModule, Routes } from '@angular/router';
+import {RoutingModule} from './routing/routing.module';
 
+const routes: Routes = [
+  { path: 'app', component: AppComponent},
+  { path: 'my-github', component: MyGithubComponent },
+  { path: 'search', component: SearchComponent },
+  { path: '**', redirectTo: '/my-github', pathMatch: 'full' },
+];
 
 @NgModule({
   declarations: [
     AppComponent,
-    MyGithubComponent
+    MyGithubComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    RoutingModule
   ],
   providers: [UserServiceService, RepositoryService],
   bootstrap: [AppComponent]
