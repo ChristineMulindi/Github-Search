@@ -1,3 +1,18 @@
+.header{
+    background-color: white;
+    width: 100%;
+    margin-top: 0%;
+    top: 0;
+}
+
+.navbar-brand{
+font-size: 1em;
+}
+
 body{
     background: black;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
 }
