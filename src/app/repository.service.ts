@@ -35,7 +35,9 @@ export class RepositoryService {
           this.repository.id = response.id;
           this.repository.html_url = response.html_url;
           this.repository.description = response.description;
+          this.newRepo=response
           console.log(this.repository);
+          console.log('xc');
           resolve();
 
           },

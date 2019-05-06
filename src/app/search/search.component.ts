@@ -14,21 +14,23 @@ export class SearchComponent implements OnInit {
 
   repository: Repository;
   result: any;
-  repoArray = [];
-
+  repoArray : any;
+link:string;
+searchValue:string;
   getRepos(reposearch) {
-    const searchVal = reposearch.value;
-    const link = 'https://api.github.com/users/' + searchVal + '/repos';
-console.log(link)
-    this.http.get(link).subscribe((item) => {
-      this.result = item;
+    // this.searchVal = reposearch.nativeElement.value;
+
+    this.link = 'https://api.github.com/users/' + reposearch.value + '/repos' + '?access_token=080c24e0209da811bc77c95dc1692cf7cb871de3';
+// console.log(link)
+    this.http.get(this.link).subscribe((item) => {
+      this.repoArray = item;
       console.log(this.result);
 
-      for (let i = 0; i < this.result.length; i++) {
-        this.repoArray.push(this.result[i]);
-        console.log(this.repoArray);
+      // for (let i = 0; i < this.result.length; i++) {
+      //   this.repoArray.push(this.result[i]);
+      //   console.log(this.repoArray);
 
-      }
+      // }
     });
   }
 
@@ -37,7 +39,7 @@ console.log(link)
   ngOnInit() {
     this.repositoryService.repoRequest();
     this.repository = this.repositoryService.repository;
-
+console.log(this.repository)
   }
 
 }

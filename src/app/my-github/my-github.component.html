@@ -1,32 +1,47 @@
 <body>
-  <div class="container"> 
+  <div class="container">
     <div class="row">
-      <div class = "col-md-1"></div>
-      <div class="col-md-5" id = "search1">
+
+      <div class="col-md-4 col-md-offset-3" id="search1">
         <input type="content" type="text" #usersearch>
         <button class="btn btn-primary" (click)="getUser(usersearch)">SEARCH</button>
       </div>
-      <div class = "col-md-6"></div>
     </div>
-    <ul *ngFor='let usersearch of userArray; let i = "index"'>
-      <div class="row">
-        <div class="col-md-6" id= "imageborder">
+
+    <div class="row">
+      <div class="col-md-12" id="imageborder1">
+        <br>
+        <img id="image" src="{{user.avatar_url}}" alt="">
+        <p>UserName: {{user.login}}<br></p>
+        <br>
+        <p>Repository: <a href="https://github.com/ChristineMulindi">My Repos</a></p>
+
+        <br>
+
+      </div>
+    </div>
+
+
+
+    <div class="row">
+      <ul class="col-md-6" *ngFor='let usersearch of userArray; let i = "index"'>
+        <div id="imageborder" >
           <br>
           <img id="image" src="{{usersearch.avatar_url}}" alt="">
         </div>
-        <div class="col-md-6" id= "info">
-        <p>UserName: {{usersearch.login}}<br></p>
+        <div id="info">
+          <p>UserName: {{usersearch.login}}<br></p>
           <br>
 
           {{usersearch.bio}}<br>
           <br>
 
-          <p>Repository: <a target="_blank" href="{{usersearch.repos_url}}">{{usersearch.repos_url}}</a></p>
+          <p>Repository: <a target="_blank" href="{{usersearch.html_url}}">{{usersearch.repos_url}}</a></p>
           <br>
         </div>
 
+      </ul>
+    </div>
 
-      </div>
-    </ul>
   </div>
 </body>

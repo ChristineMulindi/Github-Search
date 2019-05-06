@@ -11,27 +11,44 @@ h1 {
   font-weight: bolder;
 }
 
-.search1{
-  margin-bottom: 5%;
+#search1{
+  margin-bottom: 8px;
+  margin-left: 35%;
+  margin-top: 8px;
   
 }
 
+
 #image{
-  height: 60%;
-  width: 60%;
+  height: 120px;
+  width: 120px;
+}
+
+#imageborder1{
+  border: 2px solid white;
 }
 
 #imageborder{
-  border: 2px solid white;
+  border-left: 2px solid white;
+border-right: 2px solid white;
+border-top: 2px solid white;
+
+  
 
 }
 
 #info{
-  border: 2px solid white;
-  
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+  border-bottom: 2px solid white;
   
 }
 
 h1{
   text-align: center;
+}
+
+
+button{
+height: 29px;
 }

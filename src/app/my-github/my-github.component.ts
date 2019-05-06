@@ -4,6 +4,7 @@ import { User } from '../user';
 import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
 
+import { RepositoryService } from '../repository.service';
 
 
 
@@ -41,7 +42,7 @@ export class MyGithubComponent implements OnInit {
 
 
 
-  constructor(private http: HttpClient, private userService: UserServiceService) {
+  constructor(private http: HttpClient, private userService: UserServiceService, private repositoryService: RepositoryService) {
 
   }
 
