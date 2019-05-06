@@ -1,42 +1,12 @@
 <body>
-  <div class="container">
-
-
-
-    <nav class="navbar navbar-expand-lg static-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-
-        </a>
-        <h1>GITHUB SEARCH</h1>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-          aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Users</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Repositories</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
+  <div class="container"> 
     <div class="row">
-      <div class="col-md-12">
+      <div class = "col-md-1"></div>
+      <div class="col-md-5" id = "search1">
         <input type="content" type="text" #usersearch>
         <button class="btn btn-primary" (click)="getUser(usersearch)">SEARCH</button>
       </div>
+      <div class = "col-md-6"></div>
     </div>
     <ul *ngFor='let usersearch of userArray; let i = "index"'>
       <div class="row">
@@ -45,13 +15,13 @@
           <img id="image" src="{{usersearch.avatar_url}}" alt="">
         </div>
         <div class="col-md-6" id= "info">
-          UserName: {{usersearch.login}}<br>
+        <p>UserName: {{usersearch.login}}<br></p>
           <br>
 
           {{usersearch.bio}}<br>
           <br>
 
-          Repository: {{usersearch.repos_url}}<br>
+          <p>Repository: <a target="_blank" href="{{usersearch.repos_url}}">{{usersearch.repos_url}}</a></p>
           <br>
         </div>
 

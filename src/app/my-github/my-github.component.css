@@ -1,4 +1,4 @@
-@import "~bootstrap/dist/css/bootstrap.css";
+
 
 body {
   background-color: black;
@@ -11,21 +11,27 @@ h1 {
   font-weight: bolder;
 }
 
-
-
-.container {
-  background-color: black;
+.search1{
+  margin-bottom: 5%;
+  
 }
 
 #image{
-  height: 55%;
-  width: 55%;
+  height: 60%;
+  width: 60%;
 }
 
 #imageborder{
   border: 2px solid white;
+
 }
 
 #info{
   border: 2px solid white;
+  
+  
+}
+
+h1{
+  text-align: center;
 }

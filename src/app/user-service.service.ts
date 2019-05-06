@@ -8,13 +8,17 @@ import { environment } from '../environments/environment';
 export class UserServiceService {
 
   user: User;
+  newUser: any;
+
 
 
   constructor(private http: HttpClient) {
     this.user = new User('', 0, '', '');
+    console.log('works');
   }
 
   userRequest() {
+
 
     interface ApiResponse {
       login: string;
@@ -29,6 +33,7 @@ export class UserServiceService {
         this.user.id = response.id;
         this.user.avatar_url = response.avatar_url;
         this.user.bio = response.bio;
+        console.log(this.user);
 
         resolve();
       },
