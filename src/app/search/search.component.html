@@ -1,12 +1,12 @@
 <body>
   <div class="container">
     <div class="row">
-      <div class="col-md-4"></div>
+      
       <div class="col-md-5" id="search1">
-        <input type="content" type="text" #reposearch>
+        <input type="content"  class="form-control" type="text" #reposearch>
         <button class="btn btn-primary" (click)="getRepos(reposearch)">SEARCH</button>
       </div>
-      <div class="col-md-6"></div>
+   
     </div>
     <ul *ngFor='let reposearch of repoArray; let i = "index"'>
       <div class="row">
@@ -17,12 +17,15 @@
           <p>Repository Description: {{reposearch.description}}<br></p>
           <br>
 
-         <p>Repository: <a href="{{reposearch.html_url}}">{{reposearch.html_url}}</a></p>
-            <br>
+          <p>Repository: <a href="{{reposearch.html_url}}">{{reposearch.html_url}}</a></p>
+          <br>
+
+          <p>Created: {{reposearch.created_at}}</p>
         </div>
 
 
       </div>
     </ul>
+
   </div>
 </body>

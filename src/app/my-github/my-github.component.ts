@@ -34,7 +34,7 @@ export class MyGithubComponent implements OnInit {
       for (let i = 0; i < this.result['items'].length; i++) {
         this.userArray.push(this.result['items'][i]);
         console.log(this.userArray)
-      
+
       }
 
     });

@@ -13,7 +13,7 @@ export class RepositoryService {
 
 
   constructor(private http: HttpClient) {
-    this.repository = new Repository('', 0, '', '');
+    this.repository = new Repository('', 0, '', '', new Date());
     console.log('works');
   }
 

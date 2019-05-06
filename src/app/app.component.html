@@ -1,25 +1,20 @@
-
 <body>
   <div class="header">
-    
 
     <nav class="navbar navbar-expand">
-      <h1><a class="navbar-brand" href="#">Github-Search</a></h1>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        
-          <ul class="nav navbar-nav navbar-right">
-            <li><a routerLink='/my-github' class="btn btn-primary" routerLinkActive='active'>Users</a>
-            <li><a routerLink='/search' class="btn btn-primary" routerLinkActive='active'>Repositories</a></li>
-
-          </ul>
-
-     
+      <h1> <img src="../assets/GitHub-Mark.png" alt="" height="60px" width="60px"> <a class="navbar-brand"
+          href="#">GITHUB-SEARCH</a></h1>
     </nav>
   </div>
 
+  <div class="bttn">
+    <ul class="nav navbar-nav navbar-right">
+      <li><a routerLink='/my-github' class="btn btn-primary" routerLinkActive='active'>Search Users</a>
 
+      <li><a routerLink='/search' class="btn btn-primary" routerLinkActive='active'> Search Repositories</a></li>
 
+    </ul>
+  </div>
 </body>
 
 <router-outlet></router-outlet>

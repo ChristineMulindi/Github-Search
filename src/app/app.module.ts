@@ -9,6 +9,7 @@ import {RepositoryService} from '../app/repository.service';
 import { SearchComponent } from './search/search.component';
 import { RouterModule, Routes } from '@angular/router';
 import {RoutingModule} from './routing/routing.module';
+import { DateAgoPipe } from './date-ago.pipe';
 
 const routes: Routes = [
   { path: 'app', component: AppComponent},
@@ -21,7 +22,8 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     MyGithubComponent,
-    SearchComponent
+    SearchComponent,
+    DateAgoPipe
   ],
   imports: [
     BrowserModule,
