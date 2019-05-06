@@ -33,10 +33,11 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Specifications
 
-| Behavior        | Input                | Output        |
-| --------------- |:-------------------: | -------------:|
-| Search bar      | Type the username    | Users profile |
-
+| Behavior                | Input                | Output                 |
+| ------------------------|:-------------------: | ----------------------:|
+| Search bar              | Type the username    | Displays Users profile |
+| Click repositories      | Type the username    | Displays Repositories  |
+| Click on Github-Search  |          -           | Returns to landing page|
 
 ## Technologies used
 
